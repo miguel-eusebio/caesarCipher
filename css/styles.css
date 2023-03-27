@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+:root {
+    --line-color: red;
+    --bg-color: rgb(61, 61, 61);
+    --title-color: #fff;
+    --input-font-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+}
+
+body {
+    background: url('../img/red_wavy_halftone_background.jpg');
+    background-size:cover;
+}
+
+#app-section {
+    border: 3px solid var(--line-color);
+    height: 490px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#app-section:hover {
+    box-shadow: 0 0 60px var(--line-color);
+}
+
+#app-section .formbox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.formbox h2 {
+    text-align: center;
+    font-size: 35px;
+    color: var(--title-color);
+}
+
+.formbox .input-box {
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid var(--title-color);
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+    color: var(--input-font-color);
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--title-color);
+    transition: .3s ease;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+    color: var(--title-color);
+}
+
+/* TODO: BORRAR SI NO TE GUSTA */
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px
+}
+
+.buttons {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.btn-direction{
+    width: 150px;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--title-color);
+    background: var(--line-color);
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-size:auto;
+    }
+}

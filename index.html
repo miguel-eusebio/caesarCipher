@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <title>Caesar Cipher</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/caesar-cipher.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <main id="app-section">
+        <div class="formbox">
+            <form action="">
+
+                <h2>Cifrado César</h2>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input class="message" type="text" required>
+                    <label for="">Mensaje</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bxs-key'></i>
+                    </span>
+                    <input class="key" type="text" required>
+                    <label for="">Clave</label>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn-direction encrypt">
+                        Encriptar
+                    </button>
+    
+                    <button class="btn-direction decrypt">
+                        Desencriptar
+                    </button>                   
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <i class='bx bx-code'></i>
+                    </span>
+                    <input class="result" type="text" required>
+                    <label for="">Resultado</label>
+                </div>
+
+            </form>
+            
+        </div>
+    </main>
+
+</body>
+</html>
